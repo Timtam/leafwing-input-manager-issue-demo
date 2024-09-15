@@ -1,0 +1,21 @@
+[package]
+name = "keyboard-input"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+leafwing-input-manager = { version = "0.15.0", default-features = false, features = ["keyboard"] }
+
+[dependencies.bevy]
+version = "0.14.1"
+default-features = false
+features = [
+    "bevy_asset",
+    "bevy_gilrs",
+    "bevy_state",
+    "bevy_winit",
+    "flac",
+    "multi_threaded",
+    "serialize",
+    "x11",
+]
